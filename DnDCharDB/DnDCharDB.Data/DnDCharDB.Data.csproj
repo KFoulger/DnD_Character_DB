@@ -46,6 +46,8 @@
     <Compile Include="Models\ClassEnum.cs" />
     <Compile Include="Models\RaceEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ICharData.cs" />
+    <Compile Include="Services\InMemoryCharData.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

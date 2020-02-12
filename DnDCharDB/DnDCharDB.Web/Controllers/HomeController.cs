@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DnDCharDB.Data.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,16 @@ namespace DnDCharDB.Web.Controllers
 {
     public class HomeController : Controller
     {
+        ICharData db;
+
+        public HomeController()
+        {
+            db = new InMemoryCharData();
+        }
         public ActionResult Index()
         {
-            return View();
+            var model = db.GetAll();
+            return View(model);
         }
 
         public ActionResult About()

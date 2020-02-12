@@ -73,3 +73,5 @@ C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\obj\De
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\obj\Debug\DnDCharDB.Web.csproj.CopyComplete
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\obj\Debug\DnDCharDB.Web.dll
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\obj\Debug\DnDCharDB.Web.pdb
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\DnDCharDB.Data.dll
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\DnDCharDB.Data.pdb
