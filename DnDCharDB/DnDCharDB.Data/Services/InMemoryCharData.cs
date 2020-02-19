@@ -21,9 +21,36 @@ namespace DnDCharDB.Data.Services
                                 Health = 70, Level = 5, Name = "a guy", Race = RaceEnum.Human}
             };
         }
+
+        public void Create(Character character)
+        {
+            characters.Add(character);
+            character.Id = characters.Max(c => c.Id) + 1;
+        }
+
         public IEnumerable<Character> GetAll()
         {
             return characters.OrderBy(C => C.Name);
+        }
+
+        public Character GetModel(int id)
+        {
+            return characters.FirstOrDefault(c => c.Id == id);
+        }
+
+        public void Update(Character character)
+        {
+            Character cha = GetModel(character.Id);
+            if(cha != null)
+            {
+                cha.Name = character.Name;
+                cha.Class = character.Class;
+                cha.Race = character.Race;
+                cha.Age = character.Age;
+                cha.ArmourClass = character.ArmourClass;
+                cha.Health = character.Health;
+                cha.Level = character.Level;
+            }
         }
     }
 }

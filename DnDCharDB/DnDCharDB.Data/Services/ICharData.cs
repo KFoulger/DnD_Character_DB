@@ -9,5 +9,8 @@ namespace DnDCharDB.Data.Services
     public interface ICharData
     {
         IEnumerable<Character> GetAll();
+        Character GetModel(int id);
+        void Update(Character character);
+        void Create(Character character);
     }
 }
