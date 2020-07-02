@@ -12,5 +12,6 @@ namespace DnDCharDB.Data.Services
         Character GetModel(int id);
         void Update(Character character);
         void Create(Character character);
+        void Level(Character character);
     }
 }

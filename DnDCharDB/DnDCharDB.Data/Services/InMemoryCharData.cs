@@ -13,12 +13,12 @@ namespace DnDCharDB.Data.Services
         {
             characters = new List<Character>()
             {
-                new Character { Id = 1, AbilityScore = new int[]{14,19,12,11,6,22}, Age = 369,
-                                Alignment =  AlignmentEnum.LN, ArmourClass = 17, Class = ClassEnum.Bard,
-                                Health = 56, Level = 6, Name = "Viro", Race = RaceEnum.Elf},
-                new Character { Id = 2, AbilityScore = new int[]{18,12,20,8,17,14}, Age = 20,
-                                Alignment =  AlignmentEnum.LE, ArmourClass = 22, Class = ClassEnum.Barbarian,
-                                Health = 70, Level = 5, Name = "a guy", Race = RaceEnum.Human}
+                new Character { Id = 1, Stats = new int[]{14,19,12,11,6,22,2,13}, Age = 369,
+                                Alignment =  AlignmentEnum.LN, Class = ClassEnum.Bard,
+                                Level = 6, Name = "Viro", Race = RaceEnum.Elf},
+                new Character { Id = 2, Stats = new int[]{18,12,20,8,17,14,20,10}, Age = 20,
+                                Alignment =  AlignmentEnum.LE, Class = ClassEnum.Barbarian,
+                                Level = 5, Name = "a guy", Race = RaceEnum.Human}
             };
         }
 
@@ -47,9 +47,25 @@ namespace DnDCharDB.Data.Services
                 cha.Class = character.Class;
                 cha.Race = character.Race;
                 cha.Age = character.Age;
-                cha.ArmourClass = character.ArmourClass;
-                cha.Health = character.Health;
                 cha.Level = character.Level;
+            }
+        }
+
+        public void Level(Character character)
+        {
+            Character cha = GetModel(character.Id);
+            if(cha != null)
+            {
+                cha.Level++;
+                Random rng = new Random();
+                for(int i = 0; i < cha.Stats.Length; i++)
+                {
+                    if(rng.Next(0, 100) <= cha.Growths[i])
+                    {
+                        cha.Stats[i]++;
+                    }
+                }
+
             }
         }
     }

@@ -94,3 +94,4 @@ C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\Sy
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\System.Web.Http.xml
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\obj\Debug\DnDCharDB.Web.csproj.CoreCompileInputs.cache

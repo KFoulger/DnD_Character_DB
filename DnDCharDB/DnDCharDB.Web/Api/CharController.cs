@@ -18,7 +18,7 @@ namespace DnDCharDB.Web.Api
             this.db = db;
         }
 
-        public IEnumerable<Character> get()
+        public IEnumerable<Character> Get()
         {
             var model = db.GetAll();
             return model;

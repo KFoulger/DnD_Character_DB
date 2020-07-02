@@ -43,6 +43,14 @@ namespace DnDCharDB.Web.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Level(int id)
+        {
+            var model = db.GetModel(id);
+            db.Level(model);
+
+            return View(model);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Character character)
@@ -58,6 +66,17 @@ namespace DnDCharDB.Web.Controllers
             if (ModelState.IsValid)
             {
                 db.Update(character);
+                return RedirectToAction("Details", new { id = character.Id });
+            }
+            return View(character);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Details(Character character)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Level(character);
                 return RedirectToAction("Details", new { id = character.Id });
             }
             return View(character);

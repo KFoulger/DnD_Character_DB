@@ -231,6 +231,7 @@
     <Content Include="Views\Char\Details.cshtml" />
     <Content Include="Views\Char\Edit.cshtml" />
     <Content Include="Views\Char\Create.cshtml" />
+    <Content Include="Views\Char\Level.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

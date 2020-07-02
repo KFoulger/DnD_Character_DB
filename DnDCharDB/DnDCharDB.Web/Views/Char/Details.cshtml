@@ -6,10 +6,10 @@
 
 <h2>Details</h2>
 
-<div>
+<div class="form-horizontal">
     <h4>Character</h4>
     <hr />
-    <dl class="col-lg-1">
+    <dl>
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
@@ -41,28 +41,128 @@
         <dd>
             @Html.DisplayFor(model => model.Level)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Health)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Health)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ArmourClass)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ArmourClass)
-        </dd>
-
     </dl>
 </div>
-<footer>
-    <p>
-       @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-       @Html.ActionLink("Back to List", "Index")
-    </p>
-</footer>
+
+<dl>
+    <dt>
+        @Html.DisplayNameFor(Model => Model.Stats)
+    </dt>
+</dl>
+
+<div class="container-fluid col-sm-12">
+    @Html.Label("Health", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[0])
+    </div>
+
+    @Html.Label("Strength", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[1])
+    </div>
+
+    @Html.Label("Magic", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[2])
+    </div>
+</div>
+
+<div class="container-fluid col-sm-12">
+    @Html.Label("Speed", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[3])
+    </div>
+
+    @Html.Label("Skill", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[4])
+    </div>
+
+    @Html.Label("Luck", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[5])
+    </div>
+</div>
+
+<div class="container-fluid col-sm-12">
+    <div class="col-sm-1"></div>
+    @Html.Label("Defence", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[6])
+    </div>
+    <div class="col-sm-1"></div>
+    @Html.Label("M.Defence", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Stats[7])
+    </div>
+</div>
+
+<dl>
+    <dt>
+        @Html.DisplayNameFor(model => model.Growths)
+    </dt>
+</dl>
+
+<div class="container-fluid col-sm-12">
+    @Html.Label("Health", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[0])
+    </div>
+
+    @Html.Label("Strength", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[1])
+    </div>
+
+    @Html.Label("Magic", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[2])
+    </div>
+</div>
+
+<div class="container-fluid col-sm-12">
+    @Html.Label("Speed", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[3])
+    </div>
+
+    @Html.Label("Skill", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[4])
+    </div>
+
+    @Html.Label("Luck", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[5])
+    </div>
+</div>
+
+<div class="container-fluid col-sm-12">
+    <div class="col-sm-1"></div>
+    @Html.Label("Defence", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[6])
+    </div>
+    <div class="col-sm-1"></div>
+    @Html.Label("M.Defence", htmlAttributes: new { @class = "control-label col-sm-2" })
+    <div class="col-sm-2">
+        @Html.DisplayFor(model => model.Growths[7])
+    </div>
+</div>
+
+<br />
+
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="button" value="Level" class="btn btn-default" onclick="location.href='@Url.Action("Level", "Char",new { id = Model.Id })'"/>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

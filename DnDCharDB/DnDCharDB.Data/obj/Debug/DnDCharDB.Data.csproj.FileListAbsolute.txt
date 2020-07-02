@@ -3,3 +3,4 @@ C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\bin\D
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.csprojAssemblyReference.cache
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.dll
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.pdb
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.csproj.CoreCompileInputs.cache
