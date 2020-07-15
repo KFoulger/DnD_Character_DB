@@ -11,6 +11,7 @@ namespace DnDCharDB.Data.Models
     {
         public int Id { get; set; }
         public int[] Stats { get; set; } 
+        public int[] Bases { get; set; }
         public int[] Growths { get; set; }
         public int Movement { get; set; }
         public string Name { get; set; }
@@ -19,6 +20,7 @@ namespace DnDCharDB.Data.Models
         public RaceEnum Race { get; set; }
         public ClassEnum Class { get; set; }
         public AlignmentEnum Alignment { get; set; }
+        public bool StatsAtBase { get; set; }
 
         public Character()
         {

@@ -26,6 +26,15 @@ namespace DnDCharDB.Data.Services
         {
             characters.Add(character);
             character.Id = characters.Max(c => c.Id) + 1;
+
+            if (character.StatsAtBase)
+            {
+                for(int i = 0; i < (character.Level - 1); i++)
+                {
+                    Level(character);
+                }
+                character.StatsAtBase = false;
+            }
         }
 
         public IEnumerable<Character> GetAll()
@@ -41,7 +50,7 @@ namespace DnDCharDB.Data.Services
         public void Update(Character character)
         {
             Character cha = GetModel(character.Id);
-            if(cha != null)
+            if (cha != null)
             {
                 cha.Name = character.Name;
                 cha.Class = character.Class;
@@ -54,13 +63,16 @@ namespace DnDCharDB.Data.Services
         public void Level(Character character)
         {
             Character cha = GetModel(character.Id);
-            if(cha != null)
+            if (cha != null)
             {
-                cha.Level++;
-                Random rng = new Random();
-                for(int i = 0; i < cha.Stats.Length; i++)
+                if (!character.StatsAtBase || character.Level == 1)
                 {
-                    if(rng.Next(0, 100) <= cha.Growths[i])
+                    cha.Level++;
+                }
+                Random rng = new Random();
+                for (int i = 0; i < cha.Stats.Length; i++)
+                {
+                    if (rng.Next(0, 100) <= cha.Growths[i])
                     {
                         cha.Stats[i]++;
                     }
