@@ -19,9 +19,10 @@ namespace DnDCharDB.Web
 
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterApiControllers(typeof(MvcApplication).Assembly);
-            builder.RegisterType<InMemoryCharData>()
+            builder.RegisterType<SqlCharData>()
                    .As<ICharData>()
-                   .SingleInstance();
+                   .InstancePerRequest();
+            builder.RegisterType<CharacterDbContext>().InstancePerRequest();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

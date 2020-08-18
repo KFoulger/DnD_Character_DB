@@ -95,3 +95,8 @@ C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\Sy
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\System.Web.Http.xml
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\System.Web.Http.WebHost.xml
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\obj\Debug\DnDCharDB.Web.csproj.CoreCompileInputs.cache
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\EntityFramework.dll
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\DnDCharDB.Data.dll.config
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\EntityFramework.xml
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Web\bin\EntityFramework.SqlServer.xml

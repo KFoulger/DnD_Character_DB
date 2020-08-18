@@ -4,3 +4,9 @@ C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\D
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.dll
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.pdb
 C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.csproj.CoreCompileInputs.cache
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\bin\Debug\DnDCharDB.Data.dll.config
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\bin\Debug\EntityFramework.dll
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\bin\Debug\EntityFramework.xml
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kieran\Documents\GitHub\DnD_Character_DB\DnDCharDB\DnDCharDB.Data\obj\Debug\DnDCharDB.Data.csproj.CopyComplete

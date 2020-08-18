@@ -9,7 +9,12 @@ namespace DnDCharDB.Web.Controllers
 {
     public class HomeController : Controller
     {
-        ICharData db;
+        private readonly ICharData db;
+
+        public HomeController(ICharData db)
+        {
+            this.db = db;
+        }
 
         public HomeController()
         {
