@@ -8,17 +8,17 @@ namespace DnDCharDB.Data.Models
 {
     public enum ClassEnum
     {
-        Barbarian,
-        Bard,
-        Cleric,
-        Druid,
-        Fighter,
-        Monk,
-        Paladin,
-        Ranger,
-        Rogue,
-        Sorcerer,
-        Warlock,
-        Wizard
+        Barbarian = 0,
+        Bard = 1,
+        Cleric = 2,
+        Druid = 3,
+        Fighter = 4,
+        Monk = 5,
+        Paladin = 6,
+        Ranger = 7,
+        Rogue = 8,
+        Sorcerer = 9,
+        Warlock = 10,
+        Wizard = 11
     }
 }

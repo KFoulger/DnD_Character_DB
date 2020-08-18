@@ -51,6 +51,13 @@ namespace DnDCharDB.Web.Controllers
 
             return View(model);
         }
+
+        [HttpGet]
+        public ActionResult Random()
+        {
+            int charId = db.Random();
+            return RedirectToAction("Details", new { id = charId });
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Character character)

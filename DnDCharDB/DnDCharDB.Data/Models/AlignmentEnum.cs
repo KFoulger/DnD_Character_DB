@@ -8,14 +8,14 @@ namespace DnDCharDB.Data.Models
 {
     public enum AlignmentEnum
     {
-        LG,
-        NG,
-        CG,
-        LN,
-        TN,
-        CN,
-        LE,
-        NE,
-        CE
+        LG = 0,
+        NG = 1,
+        CG = 2,
+        LN = 3,
+        TN = 4,
+        CN = 5,
+        LE = 6,
+        NE = 7,
+        CE = 8
     }
 }

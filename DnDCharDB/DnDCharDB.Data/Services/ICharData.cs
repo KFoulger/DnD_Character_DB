@@ -13,5 +13,6 @@ namespace DnDCharDB.Data.Services
         void Update(Character character);
         void Create(Character character);
         void Level(Character character);
+        int Random();
     }
 }
